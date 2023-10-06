@@ -1,21 +1,14 @@
 import React, {useEffect} from 'react';
 import {useTypedSelector} from "../hooks/useTypedSelector";
 
-// import {Dispatch} from "redux";
-// import {UserAction} from "../types/declarations";
-// import {useDispatch} from "react-redux";
-// import {fetchUsers} from "../store/action-creators/user";
-
 import {useActions} from "../hooks/useActions";
 
 const UserList = () => {
 
     const {users, error, loading} = useTypedSelector(state => state.user)
-    //const dispatch: Dispatch<UserAction> = useDispatch();
     const {fetchUsers} = useActions();
 
     useEffect(() => {
-        //fetchUsers()(dispatch);
         fetchUsers();
     }, [])
 

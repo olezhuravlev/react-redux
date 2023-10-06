@@ -1,4 +1,4 @@
-import {UserAction, UserActionTypes} from "../../types/declarations";
+import {UserAction, UserActionTypes} from "../../types/user";
 import {Dispatch} from "redux";
 import axios from "axios";
 

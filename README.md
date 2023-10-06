@@ -4,7 +4,7 @@ $ npx create-react-app . --template typescript
 $ npm i @types/react-redux redux react-redux redux-thunk axios
 $ mkdir src/types src/store/reducers src/components -p
 $ touch src/store/index.ts
-$ touch src/types/declarations.ts
+$ touch src/types/user.ts
 $ touch src/store/reducers/index.ts
 $ touch src/components/UserList.tsx
 
@@ -14,7 +14,9 @@ $ touch src/hooks/useTypedSelector.ts
 $ mkdir src/store/action-creators
 $ touch src/store/action-creators/user.ts
 
-
+$ touch src/store/reducers/todoReducer.ts
+$ touch src/types/todo.ts   
+$ touch src/store/action-creators/todo.ts src/store/action-creators/index.ts
 ````
 
 ---
